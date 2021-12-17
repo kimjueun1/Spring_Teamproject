@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="../css/css2.css" rel="stylesheet" type="text/css">
 <title>Insert title here</title>
 </head>
 <body>
