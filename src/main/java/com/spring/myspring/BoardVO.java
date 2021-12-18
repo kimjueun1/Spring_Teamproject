@@ -1,5 +1,7 @@
 package com.spring.myspring;
 
+import java.util.Date;
+
 //import java.util.Date;
 
 public class BoardVO {
@@ -9,7 +11,11 @@ public class BoardVO {
 	private String dialogue;
 	private String content;
 	private String recommend;
+	private Date regdate;
+	//private int cnt;
+
 	private String writer;
+
 	public int getSeq() {
 		return seq;
 	}
@@ -28,6 +34,7 @@ public class BoardVO {
 	public void setDirector(String director) {
 		this.director = director;
 	}
+
 	public String getDialogue() {
 		return dialogue;
 	}
@@ -40,7 +47,9 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+
 	public String getRecommend() {
+
 		return recommend;
 	}
 	public void setRecommend(String recommend) {
