@@ -7,24 +7,44 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>free board</title>
 <style>
+@charset "UTF-8";
+
 #list {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+   border : 2px solid #AF3B7D;
+  border-radius:16px;
 }
 #list td, #list th {
-  border: 1px solid #ddd;
+  border : 2px solid #AF3B7D;
   padding: 8px;
   text-align:center;
+  box-shadow : inset 0 0 8px #7D7178;
 }
-#list tr:nth-child(even){background-color: #f2f2f2;}
+
 #list tr:hover {background-color: #ddd;}
 #list th {
+ border : 2px solid #AF3B7D;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #006bb3;
+  background-color : #D1A0BB;
   color: white;
+}
+h1{
+font-family: cursive;
+text-align : center;
+color : white;
+
+}
+
+body{
+background-color : #585858;
+}
+div{
+text-align : center;
+
 }
 </style>
 <script>
