@@ -10,9 +10,9 @@
 <body>
 <form method="post">
 	<table id="edit">
-		<tr><td>제목</td><td><input type="text" name="title"/></td></tr>
-		<tr><td>글쓴이</td><td><input type="text" name="writer"/></td></tr>
-		<tr><td>한줄 대사</td><td><input type="text" name="dialogue"/></td></tr>
+		<tr><td>영화제목</td><td><input type="text" name="title"/></td></tr>
+		<tr><td>닉네임</td><td><input type="text" name="writer"/></td></tr>
+		<tr><td>영화 한 줄</td><td><input type="text" name="dialogue"/></td></tr>
 		<tr><td>내용</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>
 		<tr><td>추천</td><td><input type="text" name="recommend"/></td></tr>
 	</table>
