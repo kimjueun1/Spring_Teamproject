@@ -4,10 +4,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="../css/css1.css" rel="stylesheet" type="text/css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>free board</title>
 <style>
 @charset "UTF-8";
+
+body{
+ background-color: #F3EBF6;
+}
+
+#sign{
+	 padding-top: 40px;
+        color: #8C55AA;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+}
+
 
 #list {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -21,6 +35,7 @@
   padding: 8px;
   text-align:center;
   box-shadow : inset 0 0 8px #7D7178;
+  font-weight: bold;
 }
 
 #list tr:hover {background-color: #ddd;}
@@ -33,20 +48,24 @@
   color: white;
 }
 h1{
-font-family: cursive;
+font-family: 'Ubuntu', sans-serif;
 text-align : center;
 color : white;
 
 }
 
-body{
-background-color : #585858;
+th{
+	font-family: 'Ubuntu', sans-serif;
 }
 div{
 text-align : center;
 
 }
+
+
 </style>
+<title>free board</title>
+
 <script>
 	function delete_ok(id){
 		var a = confirm("정말로 삭제하겠습니까?");
@@ -55,7 +74,8 @@ text-align : center;
 </script>
 </head>
 <body>
-<h1>자유게시판</h1>
+<div id="total">
+<h1 id="sign">Movie Database</h1>
 
 <table id="list" width="90%">
 <tr>
@@ -82,5 +102,6 @@ text-align : center;
 </c:forEach>
 </table>
 <br/><a href="./add">Add New Post</a>
+</div>
 </body>
 </html>

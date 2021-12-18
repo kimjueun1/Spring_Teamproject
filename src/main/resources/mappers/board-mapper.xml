@@ -5,13 +5,13 @@
 <mapper namespace="BoardDAO">
 	<insert id="insertBoard">
 	
-	insert into MOVIE_REVIEW (title, writer, dialogue, content, recommend, director)
+	insert into MOVIE_REVIEW (title, writer, dialogue, recommend, director)
 	values 
-	(#{title}, #{writer}, #{dialogue}, #{content}, #{recommend}, #{director})
+	(#{title}, #{writer}, #{dialogue}, #{recommend}, #{director})
 	</insert>
 	<update id="updateBoard">
 	update MOVIE_REVIEW
-		set title=#{title}, writer=#{writer}, dialogue=#{dialogue}, content=#{content}, recommend=#{recommend}, director=#{director}
+		set title=#{title}, writer=#{writer}, dialogue=#{dialogue}, recommend=#{recommend}, director=#{director}
 		where seq=#{seq}
 	</update>
 	<delete id="deleteBoard">
