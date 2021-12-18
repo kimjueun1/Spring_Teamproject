@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <link href="../css/css2.css" rel="stylesheet" type="text/css">
-<title>Insert title here</title>
+<title>기록 추가하기</title>
 </head>
 <body>
 <form method="post">
