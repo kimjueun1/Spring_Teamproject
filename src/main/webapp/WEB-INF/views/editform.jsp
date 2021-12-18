@@ -10,6 +10,9 @@
 <body>
 
 <h1>Movie Database</h1>
+<div id="box1">
+<h2>후기 편집하기</h2>
+</div>
 
 <form:form commandName="boardVO" method="POST" action="../editok">
 	<form:hidden path="seq"/>
