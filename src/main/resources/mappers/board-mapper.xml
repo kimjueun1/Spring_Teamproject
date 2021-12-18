@@ -4,17 +4,14 @@
 
 <mapper namespace="BoardDAO">
 	<insert id="insertBoard">
-	<!-- insert into BOARD (title, writer, content)values (#{title} , #{writer} , #{content}) -->
-	insert into MOVIE_REVIEW (title, writer, director, actor, dialogue, content, recommend)values (#{title}
-		, #{writer} , #{director}, #{actor}, #{dialogue}, #{content},
-		#{recommend})
+	
+	insert into MOVIE_REVIEW (title, writer, dialogue, content, recommend, director)
+	values 
+	(#{title}, #{writer}, #{dialogue}, #{content}, #{recommend}, #{director})
 	</insert>
 	<update id="updateBoard">
-	<!--update BOARDset title=#{title}, content=#{content} where seq=#{seq}  -->
 	update MOVIE_REVIEW
-		set title=#{title}, writer=#{writer},
-		director=#{director}, actor=#{actor}, dialogue=#{dialogue},
-		content=#{content}, recommend=#{recommend}
+		set title=#{title}, writer=#{writer}, dialogue=#{dialogue}, content=#{content}, recommend=#{recommend}, director=#{director}
 		where seq=#{seq}
 	</update>
 	<delete id="deleteBoard">
