@@ -1,4 +1,4 @@
-package com.spring.myspring;
+package com.spring.moviereview.mylogin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

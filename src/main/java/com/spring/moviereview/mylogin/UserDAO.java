@@ -1,4 +1,4 @@
-package com.spring.myspring;
+package com.spring.moviereview.mylogin;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

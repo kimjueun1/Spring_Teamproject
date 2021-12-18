@@ -72,7 +72,6 @@ text-align : center;
 	<tr>
 		<td>${u.getSeq()}</td>
 		<td>${u.getTitle()}</td>
-		<td>${u.getWriter()}</td>
 		<td>${u.getDirector()}</td>
 		<td>${u.getDialogue()}</td>
 		<td>${u.getRecommend()}</td>

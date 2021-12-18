@@ -1,4 +1,4 @@
-package com.spring.myspring;
+package com.spring.moviereview.mylogin;
 
 public class UserVO {
 	private String userid;

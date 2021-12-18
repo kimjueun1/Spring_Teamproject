@@ -1,4 +1,4 @@
-package com.spring.myspring;
+package com.spring.moviereview.myboard;
 
 import java.util.List;
 

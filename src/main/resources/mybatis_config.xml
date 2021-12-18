@@ -6,8 +6,8 @@
 	<properties resource="db.properties"/>
 	<!-- Alias 설정 -->
 	<typeAliases>
-	<typeAlias alias="board" type="com.spring.myspring.BoardVO"/>
-	<typeAlias alias="user" type="com.spring.myspring.UserVO"/>
+	<typeAlias alias="board" type="com.spring.moviereview.myboard.BoardVO"/>
+	<typeAlias alias="user" type="com.spring.moviereview.mylogin.UserVO"/>
 	
 	</typeAliases>
 	<!-- DataSource 설정 -->

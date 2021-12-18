@@ -1,16 +1,9 @@
-package com.spring.myspring;
-
-import java.text.DateFormat;
-import java.util.Date;
-import java.util.Locale;
+package com.spring.moviereview.mylogin;
 
 import javax.servlet.http.HttpSession;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -35,18 +28,18 @@ public class LoginController {
 			session.removeAttribute("login");
 		}
 		UserVO loginvo = service.getUser(vo);
-		if (loginvo != null) { // ·Î±×ÀÎ ¼º°ø
-			System.out.println("·Î±×ÀÎ ¼º°ø!");
+		if (loginvo != null) { // ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			System.out.println("ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½!");
 			session.setAttribute("login", loginvo);
 			returnURL = "redirect:/board/list";
-		} else { // ·Î±×ÀÎ ½ÇÆÐ
-			System.out.println("·Î±×ÀÎ ½ÇÆÐ!");
+		} else { // ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			System.out.println("ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½!");
 			returnURL = "redirect:/login/login";
 		}
 		return returnURL;
 	}
 
-	// ·Î±×¾Æ¿ô ÇÏ´Â ºÎºÐ
+	// ï¿½Î±×¾Æ¿ï¿½ ï¿½Ï´ï¿½ ï¿½Îºï¿½
 	@RequestMapping(value = "/logout")
 	public String logout(HttpSession session) {
 		session.invalidate();

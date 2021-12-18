@@ -1,4 +1,4 @@
-package com.spring.myspring;
+package com.spring.moviereview.mylogin;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
