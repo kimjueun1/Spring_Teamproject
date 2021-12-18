@@ -7,11 +7,10 @@ public class BoardVO {
 	private String title;
 	private String writer;
 	private String director;
-	private String actor;
 	private String dialogue;
 	private String content;
-	private boolean recommend;
-	//private Date regdate;
+	private String recommend;
+	private Date regdate;
 	//private int cnt;
 	public int getSeq() {
 		return seq;
@@ -37,12 +36,7 @@ public class BoardVO {
 	public void setDirector(String director) {
 		this.director = director;
 	}
-	public String getActor() {
-		return actor;
-	}
-	public void setActor(String actor) {
-		this.actor = actor;
-	}
+
 	public String getDialogue() {
 		return dialogue;
 	}
@@ -55,10 +49,10 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public boolean isRecommend() {
+	public String isRecommend() {
 		return recommend;
 	}
-	public void setRecommend(boolean recommend) {
+	public void setRecommend(String recommend) {
 		this.recommend = recommend;
 	}
 //	public Date getRegdate() {

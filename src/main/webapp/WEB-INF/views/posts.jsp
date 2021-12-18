@@ -52,7 +52,7 @@
 	<tr>
 		<td>${u.getSeq()}</td>
 		<td>${u.getTitle()}</td>
-		<td>${u.getActor()}</td>
+		<td>${u.getWriter()}</td>
 		<td>${u.getDialogue()}</td>
 		<td>${u.getContent()}</td>
 		<td>${u.isRecommend()}</td>

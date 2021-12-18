@@ -7,6 +7,8 @@
 	<!-- Alias 설정 -->
 	<typeAliases>
 	<typeAlias alias="board" type="com.spring.myspring.BoardVO"/>
+	<typeAlias alias="user" type="com.spring.myspring.UserVO"/>
+	
 	</typeAliases>
 	<!-- DataSource 설정 -->
 	<environments default="development">
@@ -23,5 +25,6 @@
 	<!-- SqlMapper설정 -->
 	<mappers>
 		<mapper resource="mappers/board-mapper.xml"/>
+		<mapper resource="mappers/user-mapper.xml"/>
 	</mappers>
 </configuration>
