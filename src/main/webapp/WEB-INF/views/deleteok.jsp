@@ -7,8 +7,8 @@
 		int id = Integer.parseInt(sid);
 		BoardVO u = new BoardVO();
 		u.setSeq(id);
-		BoardDAOImpl i = new BoardDAOImpl();
-		i.deleteBoard(id);
+		BoardDAOImpl DAO = new BoardDAOImpl();
+		DAO.deleteBoard(id);
 	}
-	response.sendRedirect("posts.jsp");
+	response.sendRedirect("../list");
 %>

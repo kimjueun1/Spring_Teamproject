@@ -2,16 +2,20 @@ package com.spring.myspring;
 
 import java.util.Date;
 
+//import java.util.Date;
+
 public class BoardVO {
 	private int seq;
 	private String title;
-	private String writer;
 	private String director;
 	private String dialogue;
 	private String content;
 	private String recommend;
 	private Date regdate;
 	//private int cnt;
+
+	private String writer;
+
 	public int getSeq() {
 		return seq;
 	}
@@ -23,12 +27,6 @@ public class BoardVO {
 	}
 	public void setTitle(String title) {
 		this.title = title;
-	}
-	public String getWriter() {
-		return writer;
-	}
-	public void setWriter(String writer) {
-		this.writer = writer;
 	}
 	public String getDirector() {
 		return director;
@@ -49,18 +47,21 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String isRecommend() {
+
+	public String getRecommend() {
+
 		return recommend;
 	}
 	public void setRecommend(String recommend) {
 		this.recommend = recommend;
 	}
-//	public Date getRegdate() {
-//		return regdate;
-//	}
-//	public void setRegdate(Date regdate) {
-//		this.regdate = regdate;
-//	}
+	public String getWriter() {
+		return writer;
+	}
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+	
 	
 	
 }

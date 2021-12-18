@@ -7,28 +7,35 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class BoardDAOImpl implements BoardDAO{
+public class BoardDAOImpl implements BoardDAO {
 	@Autowired
 	SqlSession sqlSession;
 	
 	@Override
 	public int insertBoard(BoardVO vo) {
 		System.out.println("insertBoard");
-		return sqlSession.update("BoardDAO.insertBoard", vo);
+		return sqlSession.insert("BoardDAO.insertBoard", vo);
 	}
 	
-//	@Override
-//	public int updateBoard(BoardVO vo) {
-//		System.out.println("updateBoard");
-//		return sqlSession.insert("BoardDAO.insertBoard", vo);
-//	}
+	@Override
+	public int updateBoard(BoardVO vo) {
+		System.out.println("updateBoard");
+		return sqlSession.update("BoardDAO.updateBoard", vo);
+	}
 
-//	@Override
-//	public int deleteBoard(int id) {
-//		int result = sqlSession.delete("Board.deleteBoard", id);
-//		return result;
-//	}
+	@Override
+	public int deleteBoard(int id) {
+		System.out.println("deleteBoard");
+		return sqlSession.delete("BoardDAO.deleteBoard", id);
+	}
 	
+	@Override
+	public BoardVO getBoard(int id) {
+		System.out.println("getBoard");
+		return sqlSession.selectOne("BoardDAO.getBoard", id);
+
+	}
+
 	@Override
 	public List<BoardVO> getBoardList() {
 		System.out.println("getBoardList");

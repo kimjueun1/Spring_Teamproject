@@ -30,7 +30,7 @@
 <script>
 	function delete_ok(id){
 		var a = confirm("정말로 삭제하겠습니까?");
-		if(a) location.href='deletepost.jsp?id=' + id;
+		if(a) location.href='./deleteok/'+id;
 	}
 </script>
 </head>
@@ -40,11 +40,11 @@
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
-	<th>Title</th>
-	<th>Writer</th>
+	<th>영화 제목</th>
+	<th>영화 감독</th>
 	<th>영화 한줄(대사)</th>
-	<th>후기</th>
 	<th>추천</th>
+	<th>작성자</th>
 	<th>Edit</th>
 	<th>Delete</th>
 </tr>
@@ -53,10 +53,11 @@
 		<td>${u.getSeq()}</td>
 		<td>${u.getTitle()}</td>
 		<td>${u.getWriter()}</td>
+		<td>${u.getDirector()}</td>
 		<td>${u.getDialogue()}</td>
-		<td>${u.getContent()}</td>
-		<td>${u.isRecommend()}</td>
-		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
+		<td>${u.getRecommend()}</td>
+		<td>${u.getWriter()}</td>
+		<td><a href="./edit/${u.getSeq()}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
 	</tr>
 </c:forEach>

@@ -21,20 +21,17 @@ public class BoardServiceImpl implements BoardService{
 	}
 	
 	@Override
-	public BoardVO getBoard(int seq) {
-		return null;
-	}
-
-	@Override
-	public int deleteBoard(int id) {
-		// TODO Auto-generated method stub
-		return 0;
+	public BoardVO getBoard(int id) {
+		return boardDAO.getBoard(id);
 	}
 
 	@Override
 	public int updateBoard(BoardVO vo) {
-		// TODO Auto-generated method stub
-		return 0;
+		return boardDAO.updateBoard(vo);
 	}
-
+	
+	@Override
+	public int deleteBoard(int id) {
+		return boardDAO.deleteBoard(id);
+	}
 }
